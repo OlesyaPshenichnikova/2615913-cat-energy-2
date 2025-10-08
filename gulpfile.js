@@ -62,7 +62,6 @@ export function processStyles () {
           multi: true,
         },
       ]),
-  
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());
