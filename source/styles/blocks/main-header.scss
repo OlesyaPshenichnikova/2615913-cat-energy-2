@@ -1,0 +1,17 @@
+.main-header {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-header__container {
+  padding-top: 65px;
+  position: relative;
+  background: url("../../images/logo/logo-text.svg") no-repeat center 23px;
+}
+
+.main-header__logo-link {
+  position: absolute;
+  top: 13px;
+  left: 21px;
+}
+
+.main-header__logo {}

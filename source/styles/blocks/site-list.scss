@@ -1,0 +1,22 @@
+.site-list {
+
+    display: none;
+}
+
+.site-list__item {
+    border-top: 1px solid #e6e6e6;
+}
+
+.site-list__item--current {}
+
+.site-list__link {
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: block;
+    padding: 22px 5px 23px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}

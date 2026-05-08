@@ -1,0 +1,19 @@
+.main-nav {
+    position: relative;
+}
+
+.main-nav__toggle {
+    position: absolute;
+    top: -44px;
+    right: 19px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url("../../images/burger/burger.svg") no-repeat 0 0;
+}
+
+.main-nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
