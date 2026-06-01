@@ -1,0 +1,100 @@
+.hero {
+    color: #ffffff;
+    margin-bottom: 20px;
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}
+
+.hero__wrapper {
+    padding-bottom: 130px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 280px;
+        height: 270px;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 140px);
+        background: url(../../images/main/index-can-mobile.png) no-repeat 0 0;
+        z-index: 100;
+    }
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}
+
+.hero__block {
+    background: #434246 url(../../images/main/cat-m.jpg) no-repeat top center / auto 100%;
+    padding: 27px 0 163px;
+    position: relative;
+
+    ::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $topic;
+        opacity: 0.85;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}
+
+.hero__title {
+    margin: 0 auto 25px;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 280px;
+    position: relative;
+    z-index: 50;
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}
+
+.hero__slogan {
+    margin: 0 auto;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 300px;
+    position: relative;
+    z-index: 50;
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}
+
+.hero__link {
+    font-family: $oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin: 0 20px;
+    background-color: $topic;
+    padding: 11px 0 9px;
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}

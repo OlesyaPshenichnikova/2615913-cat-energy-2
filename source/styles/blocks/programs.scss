@@ -1,8 +1,11 @@
-
 .programs__list {
     padding: 0;
     margin: 0 20px;
     list-style: none;
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
 }
 
 .programs__item {
@@ -10,16 +13,29 @@
     padding: 29px 27px 21px 30px;
     margin-bottom: 19px;
     position: relative;
+    
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
 
     &::before {
         content: "";
         width: 50px;
         height: 50px;
         position: absolute;
-        background: topic./blocks/main-header.scss./blocks/main-header.scss;
+        background: $topic;
         top: 24px;
         left: 30px;
         border-radius: 50%;
+         @media (min-width: $tablet) {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        background: $topic;
+        top: 0;
+        left: 580px;
+        border-radius: 50%;
+         }
     }
 
     &::after {
@@ -36,8 +52,34 @@
     left: 37px;
     width: 36px;
     height: 50px;
-}
+    
+  @media (min-width: $tablet) {
+     top: 0;
+    left: 611px;
+    width: 140px;
+    height: 194px;
+  }
 
+  @media (min-width: $desktop) {}
+}
+.programs__item--gain::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../images/main/cat-big.svg");
+    top: 33px;
+    left: 20px;
+    width: 68px;
+    height: 28px;
+    
+  @media (min-width: $tablet) {
+      top: 39px;
+    left: 540px;
+    width: 269px;
+    height: 113px;
+  }
+
+  @media (min-width: $desktop) {}
+}
 
 .programs__title {
     margin: 0 0 30px;
@@ -49,6 +91,17 @@
     padding-left: 70px;
     min-width: 1px;
     min-height: 24px;
+    
+  @media (min-width: $tablet) {
+font-weight: 400;
+font-size: 36px;
+line-height: 36px;
+text-transform: uppercase;
+padding-left: 0;
+
+  }
+
+  @media (min-width: $desktop) {}
 }
 
 .programs__text {
@@ -59,6 +112,16 @@
     padding-bottom: 21px;
     border-bottom: 1px solid red;
     margin-bottom: 18px;
+    
+  @media (min-width: $tablet) {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+border-bottom: none;
+max-width: 345px;
+  }
+
+  @media (min-width: $desktop) {}
 }
 
 .programs__link {
@@ -68,4 +131,10 @@
     line-height: 16px;
     text-transform: uppercase;
     color: #000000;
+    
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {}
 }

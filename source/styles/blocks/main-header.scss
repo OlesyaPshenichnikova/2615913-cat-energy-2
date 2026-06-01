@@ -1,17 +1,41 @@
 .main-header {
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+
+  @media (min-width: $desktop) {}
 }
 
 .main-header__container {
   padding-top: 65px;
   position: relative;
   background: url("../../images/logo/logo-text.svg") no-repeat center 23px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    background: none;
+  }
+
+  @media (min-width: $desktop) {}
 }
 
 .main-header__logo-link {
   position: absolute;
   top: 13px;
   left: 21px;
+
+  @media (min-width: $tablet) {
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop) {}
 }
 
-.main-header__logo {}
+.main-header__logo {
+  @media (min-width: $tablet) {}
+
+  @media (min-width: $desktop) {}
+}

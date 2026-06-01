@@ -1,39 +1,117 @@
-.description_block{
-font-family: "Oswald", Arial, sans-serif;
-font-weight: 400;
-font-size: 36px;
-line-height: 40px;
-margin: 0;
-padding-left: 30px;
+.description {
+    padding: 0 20px;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
 }
+
+.description__title {
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0 0 40px;
+
+    @media (min-width: $tablet) {
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0 0 40px;
+    }
+
+    @media (min-width: $desktop) {}
+}
+
 .description__list {
     padding: 0;
     margin: 0 20px;
     list-style: none;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
 }
 
 .description__item {
-    margin: 0;
-    padding: 29px 27px 21px 30px;
+    margin: 0 0 21px;
+    padding: 0 7px 0 81px;
     position: relative;
+    min-height: 60px;
 
     &::before {
         content: "";
         width: 60px;
         height: 60px;
         position: absolute;
-        background: $topic;
-        top: 41px;
-        left: 10px;
-    }
-       &::after {
-        content: "";
-        position: absolute;
-        background-position: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: $topic;
         background-image: url("../../images/main/description-leaf.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 41px;
+        left: 0;
     }
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+}
+
+.description__item--powder {
+    ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: $topic;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 41px;
+        left: 0;
+        background-image: url("../../images/main/description-powder.svg");
+    }
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+}
+
+.description__item--eat {
+    ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: $topic;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 41px;
+        left: 0;
+        background-image: url("../../images/main/icon_eat.png");
+    }
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
+}
+
+.description__item--watch {
+    ::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: $topic;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 41px;
+        left: 0;
+        background-image: url("../../images/main/watch.svg");
+    }
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
 }
 
 .description__text {
@@ -43,6 +121,9 @@ padding-left: 30px;
     line-height: 18px;
     color: #444444;
     margin: 0;
-    padding-left: 60px;
-    padding-top: 15px;
+    padding-top: 2px;
+
+    @media (min-width: $tablet) {}
+
+    @media (min-width: $desktop) {}
 }
