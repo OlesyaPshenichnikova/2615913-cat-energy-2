@@ -1,0 +1,35 @@
+.socials {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 132px;
+  gap: 24px
+}
+
+.socials__item {
+    
+}
+
+.socials__link {
+  display: flex;
+  width: 28px;
+  height: 22px;
+  justify-content: center;
+  align-items: center;
+  color: red;
+
+  &:hover {
+    color: green;
+  }
+
+  &:focus {
+    color: blue;
+    outline: none;
+  }
+
+  &:active {
+    color: aqua;
+  }
+}

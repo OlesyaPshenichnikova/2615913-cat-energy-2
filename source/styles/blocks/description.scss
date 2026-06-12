@@ -25,7 +25,7 @@
 
 .description__list {
     padding: 0;
-    margin: 0 20px;
+    margin: 0;
     list-style: none;
 
     @media (min-width: $tablet) {}
@@ -48,7 +48,7 @@
         background-image: url("../../images/main/description-leaf.svg");
         background-repeat: no-repeat;
         background-position: center;
-        top: 41px;
+        top: 0;
         left: 0;
     }
 
@@ -58,16 +58,7 @@
 }
 
 .description__item--powder {
-    ::before {
-        content: "";
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        background-color: $topic;
-        background-repeat: no-repeat;
-        background-position: center;
-        top: 41px;
-        left: 0;
+    &::before {
         background-image: url("../../images/main/description-powder.svg");
     }
 
@@ -77,16 +68,7 @@
 }
 
 .description__item--eat {
-    ::before {
-        content: "";
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        background-color: $topic;
-        background-repeat: no-repeat;
-        background-position: center;
-        top: 41px;
-        left: 0;
+    &::before {
         background-image: url("../../images/main/icon_eat.png");
     }
 
@@ -96,16 +78,7 @@
 }
 
 .description__item--watch {
-    ::before {
-        content: "";
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        background-color: $topic;
-        background-repeat: no-repeat;
-        background-position: center;
-        top: 41px;
-        left: 0;
+    &::before {
         background-image: url("../../images/main/watch.svg");
     }
 
